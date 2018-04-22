@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.InventoryController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.InventoryController">
   <!-- TODO Add Nodes -->
   <children>
-    <ImageView fitHeight="58.63157653808594" fitWidth="114.25640824357428" layoutX="372.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="58.63157653808594" fitWidth="114.25640824357428" layoutX="472.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../gds_logo.jpg" />
       </image>
@@ -22,12 +22,12 @@
       </tooltip>
     </TextField>
     <Button layoutX="259.0" layoutY="100.0" mnemonicParsing="false" text="SEARCH" />
-    <Label layoutX="188.0" layoutY="24.0" text="Inventory">
+    <Label layoutX="246.0" layoutY="23.0" text="Inventory">
       <font>
         <Font name="DejaVu Sans Bold" size="20.0" />
       </font>
     </Label>
-    <ProgressIndicator layoutX="451.0" layoutY="447.0" progress="0.0" />
+    <ProgressIndicator layoutX="551.0" layoutY="395.0" progress="0.0" />
     <AnchorPane layoutX="25.0" layoutY="166.0" prefHeight="262.0" prefWidth="447.25640869140625">
       <children>
         <TreeView layoutX="0.0" layoutY="14.0" prefHeight="234.0" prefWidth="426.0" />

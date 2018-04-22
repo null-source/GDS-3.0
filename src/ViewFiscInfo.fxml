@@ -10,18 +10,18 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
   <!-- TODO Add Nodes -->
   <children>
-    <ImageView fitHeight="55.907892463057244" fitWidth="108.94871520996094" layoutX="477.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="54.26315615798413" fitWidth="105.74359130859375" layoutX="480.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../gds_logo.jpg" />
       </image>
     </ImageView>
-    <Button layoutX="30.0" layoutY="33.0" mnemonicParsing="false" text="BACK" />
-    <Label layoutX="231.0" layoutY="30.0" text="GDS Driver">
+    <Button layoutX="29.0" layoutY="22.0" mnemonicParsing="false" text="BACK" />
+    <Label layoutX="172.0" layoutY="24.0" text="Financial Information">
       <font>
         <Font name="DejaVu Sans Bold" size="20.0" />
       </font>
     </Label>
-    <Button layoutX="30.0" layoutY="129.0" mnemonicParsing="false" text="CLOCK IN/OUT" />
-    <Button layoutX="30.0" layoutY="170.0" mnemonicParsing="false" text="VIEW ORDERS" />
+    <ListView layoutX="29.0" layoutY="110.0" prefHeight="231.0" prefWidth="532.0" />
+    <ScrollBar layoutX="547.0" layoutY="110.0" orientation="VERTICAL" prefHeight="231.0" />
   </children>
 </AnchorPane>

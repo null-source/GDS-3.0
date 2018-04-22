@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.ManagerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.ManagerController">
   <!-- TODO Add Nodes -->
   <children>
-    <ImageView fitHeight="58.85526236789177" fitWidth="114.69230651855469" layoutX="371.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="58.85526236789177" fitWidth="114.69230651855469" layoutX="471.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../gds_logo.jpg" />
       </image>
     </ImageView>
     <Button layoutX="28.0" layoutY="36.0" mnemonicParsing="false" text="BACK" />
-    <Label layoutX="129.0" layoutY="35.0" text="GDS Store Manager">
+    <Label layoutX="189.0" layoutY="32.0" text="GDS Store Manager">
       <font>
         <Font name="DejaVu Sans Bold" size="20.0" />
       </font>

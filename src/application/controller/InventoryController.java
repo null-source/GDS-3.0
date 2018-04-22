@@ -24,9 +24,9 @@ public class InventoryController implements EventHandler <ActionEvent> {
 				// Set the scene to stage and show the stage to the user
 				Main.stage.setTitle("GDS - Manager");
 				Main.stage.setResizable(true);
-				Main.stage.setHeight(500);
-				Main.stage.setMinHeight(500);
-				Main.stage.setMinWidth(500);
+				Main.stage.setHeight(400);
+				Main.stage.setMinHeight(400);
+				Main.stage.setMinWidth(600);
 				Main.stage.setScene(new Scene (root));
 				Main.stage.show();
 			} catch (Exception e) {
