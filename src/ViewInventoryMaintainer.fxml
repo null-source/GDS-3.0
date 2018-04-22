@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.InventoryController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MaintainerInvController">
   <!-- TODO Add Nodes -->
   <children>
     <ImageView fitHeight="58.63157653808594" fitWidth="114.25640824357428" layoutX="472.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
@@ -27,10 +27,10 @@
         <Font name="DejaVu Sans Bold" size="20.0" />
       </font>
     </Label>
-    <ProgressIndicator layoutX="551.0" layoutY="338.0" progress="0.0" />
-    <AnchorPane layoutX="14.0" layoutY="135.0" prefHeight="251.0" prefWidth="445.0">
+    <ProgressIndicator layoutX="551.0" layoutY="307.0" progress="0.0" />
+    <AnchorPane layoutX="14.0" layoutY="135.0" prefHeight="211.0" prefWidth="444.0">
       <children>
-        <TreeView layoutX="10.0" layoutY="17.0" prefHeight="234.0" prefWidth="426.0" />
+        <TreeView layoutX="10.0" layoutY="0.0" prefHeight="211.0" prefWidth="428.0" />
       </children>
     </AnchorPane>
   </children>

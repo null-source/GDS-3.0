@@ -12,7 +12,7 @@
   <children>
     <Button fx:id="back" layoutX="25.0" layoutY="27.0" mnemonicParsing="false" onAction="#handle" text="BACK" textAlignment="CENTER" underline="false" />
     <Button layoutX="25.0" layoutY="121.0" mnemonicParsing="false" text="CLOCK IN/OUT" />
-    <Button layoutX="25.0" layoutY="168.0" mnemonicParsing="false" text="VIEW ORDERS" />
+    <Button fx:id="orders" layoutX="25.0" layoutY="168.0" mnemonicParsing="false" onAction="#handle" text="VIEW ORDERS" />
     <Label layoutX="226.0" layoutY="23.0" text="GDS Shopper">
       <font>
         <Font name="DejaVu Sans Bold" size="20.0" />

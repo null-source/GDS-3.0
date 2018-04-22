@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.ShopperOrderController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fitHeight="51.23683927849539" fitWidth="99.84614562988281" layoutX="486.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../gds_logo.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="back" layoutX="30.0" layoutY="31.0" mnemonicParsing="false" onAction="#handle" text="BACK" />
+    <TextField layoutX="30.0" layoutY="76.0" prefWidth="200.0" promptText="ORDER ID" />
+    <Button layoutX="261.0" layoutY="76.0" mnemonicParsing="false" text="SEARCH" />
+    <Label layoutX="262.0" layoutY="21.0" text="Orders">
+      <font>
+        <Font name="DejaVu Sans Bold" size="20.0" />
+      </font>
+    </Label>
+    <TitledPane animated="false" layoutX="32.0" layoutY="129.0" prefHeight="250.0" prefWidth="512.0" text="Order Information">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </TitledPane>
+  </children>
+</AnchorPane>

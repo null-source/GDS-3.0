@@ -9,21 +9,21 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
-public class ShopperController implements EventHandler <ActionEvent> {
+public class DriverTaskController implements EventHandler <ActionEvent> {
 
 	
 	@FXML 
-	Button back, orders;
+	Button back;
 	
 	
 	@Override
 	public void handle(ActionEvent event) {
 		if (event.getSource() == back) {
 			try {
-				Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("/DriverView.fxml"));
 				
 				// Set the scene to stage and show the stage to the user
-				Main.stage.setTitle("GDS - Main");
+				Main.stage.setTitle("GDS - Driver");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
 				Main.stage.setMinHeight(400);
@@ -35,23 +35,7 @@ public class ShopperController implements EventHandler <ActionEvent> {
 			}
 		}
 		
-		if (event.getSource() == orders) {
-			try {
-				Parent root = FXMLLoader.load(getClass().getResource("/ViewOrdersShopper.fxml"));
-				
-				// Set the scene to stage and show the stage to the user
-				Main.stage.setTitle("GDS - Orders");
-				Main.stage.setResizable(true);
-				Main.stage.setHeight(400);
-				Main.stage.setMinHeight(400);
-				Main.stage.setMinWidth(600);
-				Main.stage.setScene(new Scene (root));
-				Main.stage.show();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-		
+	
 	}
 
 }
