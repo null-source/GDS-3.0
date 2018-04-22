@@ -14,15 +14,19 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
+			/*
+			 * 
+			 * LAUNCH THE MAIN VIEW. CHANGE TO /Main.fxml later, testing ManagerView now
+			 * 
+			 */
+			Parent root = FXMLLoader.load(getClass().getResource("/ManagerView.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("GDS"); 			//sets title name
-			primaryStage.setHeight(401);
+			primaryStage.setHeight(500);
 			primaryStage.setWidth(500);
 			primaryStage.setResizable(false); 		//doesn't allow resizing.
 			primaryStage.show(); 					//opens the window
-			
 			
 		} catch(Exception e) {
 			e.printStackTrace();
