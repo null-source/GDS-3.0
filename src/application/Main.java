@@ -14,12 +14,8 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			/*
-			 * 
-			 * LAUNCH THE MAIN VIEW. CHANGE TO /Main.fxml later, testing ManagerView now
-			 * 
-			 */
-			Parent root = FXMLLoader.load(getClass().getResource("/ManagerView.fxml"));
+
+			Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("GDS"); 			//sets title name

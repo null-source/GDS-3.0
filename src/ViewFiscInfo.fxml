@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.FiscController">
   <!-- TODO Add Nodes -->
   <children>
     <ImageView fitHeight="54.26315615798413" fitWidth="105.74359130859375" layoutX="480.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
@@ -15,7 +15,7 @@
         <Image url="@../gds_logo.jpg" />
       </image>
     </ImageView>
-    <Button layoutX="29.0" layoutY="22.0" mnemonicParsing="false" text="BACK" />
+    <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#handle" text="BACK" />
     <Label layoutX="172.0" layoutY="24.0" text="Financial Information">
       <font>
         <Font name="DejaVu Sans Bold" size="20.0" />

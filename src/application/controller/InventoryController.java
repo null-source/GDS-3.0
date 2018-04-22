@@ -19,10 +19,10 @@ public class InventoryController implements EventHandler <ActionEvent> {
 		
 		if (event.getSource() == back) {
 			try {
-				Parent root = FXMLLoader.load(getClass().getResource("/ManagerView.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
 				
 				// Set the scene to stage and show the stage to the user
-				Main.stage.setTitle("GDS - Manager");
+				Main.stage.setTitle("GDS - Main");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
 				Main.stage.setMinHeight(400);

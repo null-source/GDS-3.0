@@ -5,9 +5,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MainController">
   <!-- TODO Add Nodes -->
   <children>
     <Label layoutX="21.0" layoutY="31.0" text="Grocery Delivery System" />
+    <Button fx:id="manager" layoutX="21.0" layoutY="119.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Test Manager" />
+    <Button fx:id="maintainer" layoutX="21.0" layoutY="162.0" mnemonicParsing="false" onAction="#handle" text="Test Storage Maintainer" />
+    <Button fx:id="driver" layoutX="21.0" layoutY="200.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Test Driver" />
+    <Button fx:id="shopper" layoutX="21.0" layoutY="243.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Test Shopper" />
   </children>
 </AnchorPane>

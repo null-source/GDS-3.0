@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MaintainerController">
   <!-- TODO Add Nodes -->
   <children>
     <ImageView fitHeight="61.63157653808594" fitWidth="120.10256222696695" layoutX="466.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
@@ -15,7 +15,7 @@
         <Image url="@../gds_logo.jpg" />
       </image>
     </ImageView>
-    <Button layoutX="27.0" layoutY="36.0" mnemonicParsing="false" text="BACK" />
+    <Button fx:id="back" layoutX="27.0" layoutY="36.0" mnemonicParsing="false" onAction="#handle" text="BACK" />
     <Button layoutX="27.0" layoutY="92.0" mnemonicParsing="false" prefWidth="136.0" text="CLOCK IN/OUT" />
     <Button layoutX="27.0" layoutY="125.0" mnemonicParsing="false" text="VIEW INVENTORY" />
     <TitledPane animated="false" layoutX="27.0" layoutY="161.0" prefWidth="438.0" text="ALERTS">

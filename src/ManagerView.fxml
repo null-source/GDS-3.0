@@ -15,7 +15,7 @@
         <Image url="@../gds_logo.jpg" />
       </image>
     </ImageView>
-    <Button layoutX="28.0" layoutY="36.0" mnemonicParsing="false" text="BACK" />
+    <Button fx:id="back" layoutX="28.0" layoutY="36.0" mnemonicParsing="false" onAction="#handle" text="BACK" />
     <Label layoutX="189.0" layoutY="32.0" text="GDS Store Manager">
       <font>
         <Font name="DejaVu Sans Bold" size="20.0" />
@@ -24,6 +24,6 @@
     <Button fx:id="inv" layoutX="28.0" layoutY="130.0" mnemonicParsing="false" onAction="#handle" prefWidth="161.0" text="VIEW INVENTORY" />
     <Button fx:id="orders" layoutX="28.0" layoutY="177.0" mnemonicParsing="false" onAction="#handle" prefWidth="161.0" text="VIEW ORDER" />
     <Button layoutX="28.0" layoutY="222.0" mnemonicParsing="false" text="MANAGE EMPLOYEES" />
-    <Button layoutX="28.0" layoutY="265.0" mnemonicParsing="false" prefWidth="161.0" text="FINANCIAL INFO" />
+    <Button fx:id="fisc" layoutX="28.0" layoutY="265.0" mnemonicParsing="false" onAction="#handle" prefWidth="161.0" text="FINANCIAL INFO" />
   </children>
 </AnchorPane>
