@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fitHeight="58.85526236789177" fitWidth="114.69230651855469" layoutX="371.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../gds_logo.jpg" />
+      </image>
+    </ImageView>
+    <Button layoutX="28.0" layoutY="36.0" mnemonicParsing="false" text="BACK" />
+    <Label layoutX="129.0" layoutY="35.0" text="GDS Store Manager">
+      <font>
+        <Font name="DejaVu Sans Bold" size="20.0" />
+      </font>
+    </Label>
+    <Button layoutX="28.0" layoutY="130.0" mnemonicParsing="false" prefWidth="161.0" text="VIEW INVENTORY" />
+    <Button layoutX="28.0" layoutY="177.0" mnemonicParsing="false" prefWidth="161.0" text="VIEW ORDER" />
+    <Button layoutX="28.0" layoutY="222.0" mnemonicParsing="false" text="MANAGE EMPLOYEES" />
+    <Button layoutX="28.0" layoutY="265.0" mnemonicParsing="false" prefWidth="161.0" text="FINANCIAL INFO" />
+  </children>
+</AnchorPane>
