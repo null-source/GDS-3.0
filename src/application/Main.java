@@ -19,7 +19,7 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("GDS"); 			//sets title name
-			primaryStage.setHeight(420);
+			primaryStage.setHeight(420);			// Good height
 			primaryStage.setWidth(600);
 			primaryStage.setResizable(false); 		//doesn't allow resizing.
 			primaryStage.show(); 					//opens the window

@@ -28,7 +28,7 @@ public class CustomerLoginController implements EventHandler <ActionEvent> {
 	private TextField cusPassword;
 	
 	public void Login(ActionEvent event) {
-		if (cusEmail.getText().equals("user") && cusPassword.getText().equals("pass")) {
+		if (cusEmail.getText().equals("1") && cusPassword.getText().equals("1")) {
 			loginStatus.setText("Login Successful");
 		} else {
 			loginStatus.setText("Login failed");

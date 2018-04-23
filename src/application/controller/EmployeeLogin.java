@@ -8,6 +8,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class EmployeeLogin implements EventHandler <ActionEvent> {
 
@@ -15,6 +17,23 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 	@FXML
 	Button manager, shopper, driver, maintainer, back;
 	
+	@FXML
+	private Label loginStatus;
+
+	@FXML
+	private TextField empID;
+	
+	@FXML
+	private TextField empPassword;
+	
+	public void Login(ActionEvent event) {
+		if (empID.getText().equals("1") && empID.getText().equals("1")) {
+			loginStatus.setText("Login Successful");
+		} else {
+			loginStatus.setText("Login failed");
+		}
+		
+	}
 	
 	@Override
 	public void handle(ActionEvent event) {
