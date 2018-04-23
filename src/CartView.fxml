@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141">
+   <children>
+      <ImageView fitHeight="64.0" fitWidth="118.0" layoutX="468.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gds_logo.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="32.0" layoutY="31.0" mnemonicParsing="false" text="BACK" />
+      <Button layoutX="501.0" layoutY="343.0" mnemonicParsing="false" text="Check out" />
+      <BorderPane layoutX="73.0" layoutY="100.0" prefHeight="234.0" prefWidth="492.0">
+         <right>
+            <ScrollBar orientation="VERTICAL" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Button mnemonicParsing="false" text="Remove from cart" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <TextField editable="false" layoutX="301.0" layoutY="347.0" prefHeight="26.0" prefWidth="84.0" />
+      <Label layoutX="253.0" layoutY="350.0" text="Total:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="28.0" prefHeight="33.0" prefWidth="143.0" text="Your cart">
+         <font>
+            <Font name="DejaVu Sans Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="54.0" layoutX="313.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../cart.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

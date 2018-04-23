@@ -51,5 +51,6 @@
     </ScrollPane>
     <ProgressBar layoutX="354.0" layoutY="379.0" minHeight="6.9998779296875" prefHeight="7.0" prefWidth="94.0" progress="-1.0" />
       <Button layoutX="333.0" layoutY="30.0" mnemonicParsing="false" text="SEARCH" />
+      <Button layoutX="414.0" layoutY="30.0" mnemonicParsing="false" text="CART" />
   </children>
 </AnchorPane>
