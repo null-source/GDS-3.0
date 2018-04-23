@@ -28,6 +28,7 @@ public class CustomerLoginController implements EventHandler <ActionEvent> {
 		
 		if (event.getSource() == submit) {
 			System.out.println("Test!");
+			
 			if (cusEmail.getText().equals("1") && cusPassword.getText().equals("1")) {
 				loginStatus.setText("Login Successful");
 			//	Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));

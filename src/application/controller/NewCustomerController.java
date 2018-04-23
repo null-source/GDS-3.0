@@ -15,7 +15,7 @@ public class NewCustomerController implements EventHandler <ActionEvent> {
 
 	
 	@FXML 
-	Button back;
+	Button back, createAcc;
 	
 	@FXML
 	private Label registerStatus;
@@ -23,22 +23,23 @@ public class NewCustomerController implements EventHandler <ActionEvent> {
 	@FXML
 	private TextField cusName, cusEmail, cusPassword, cusPasswordConfirm;
 	
-	public void Register(ActionEvent event) {
-		
-		if(cusPassword.getLength() < 6) 
-			registerStatus.setText("Password must be at least 6 characters long");
-		else if(!cusPassword.getText().equals(cusPasswordConfirm.getText()))
-			registerStatus.setText("Passwords do not match");
-		else if(cusName.getText().isEmpty())
-			registerStatus.setText("Please enter a name");
-		else if(cusEmail.getText().isEmpty())
-			registerStatus.setText("Please enter an email");
-		else 
-			registerStatus.setText("Account created, you may now login");
-	}
-	
 	@Override
 	public void handle(ActionEvent event) {
+		
+		if (event.getSource() == createAcc) {
+			
+			if(cusPassword.getLength() < 6) 
+				registerStatus.setText("Password must be at least 6 characters long");
+			else if(!cusPassword.getText().equals(cusPasswordConfirm.getText()))
+				registerStatus.setText("Passwords do not match");
+			else if(cusName.getText().isEmpty())
+				registerStatus.setText("Please enter a name");
+			else if(cusEmail.getText().isEmpty())
+				registerStatus.setText("Please enter an email");
+			else 
+				registerStatus.setText("Account created, you may now login");
+		}
+	
 		if (event.getSource() == back) {
 			try {
 				Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
