@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import application.EmployeeHandle;
 
 public class EmployeeLogin implements EventHandler <ActionEvent> {
 
@@ -110,7 +111,7 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 		if (event.getSource() == submit) {
 			try {
 
-				int code = validateEmployeeLogin(empID.getText(), password.getText())
+				int code = empExists(empID.getText(), password.getText())
 		
 				if (code == 0) { //Store Manager
 					Parent root = FXMLLoader.load(getClass().getResource("/ManagerView.fxml"));
