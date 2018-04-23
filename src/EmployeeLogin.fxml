@@ -30,5 +30,6 @@
     <Button fx:id="maintainer" layoutX="390.0" layoutY="272.0" mnemonicParsing="false" onAction="#handle" text="Storage Maintainer Test" />
     <Button id="maintainer" fx:id="shopper" layoutX="390.0" layoutY="310.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Shopper Test" />
     <Button fx:id="driver" layoutX="21.0" layoutY="272.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Driver Test" />
+      <Label fx:id="loginStatus" alignment="CENTER" layoutX="228.0" layoutY="118.0" prefHeight="17.0" prefWidth="166.0" textFill="RED" />
   </children>
 </AnchorPane>
