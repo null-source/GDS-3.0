@@ -1,13 +1,12 @@
 package application.model;
 
-public class Customer {
+public abstract class Customer {
 	
 	private String name;
 	private String email;
 	private String address;
 	
 	public Customer(String name, String email, String address) {
-		
 		this.setName(name);
 		this.setEmail(email);
 		this.setAddress(address);

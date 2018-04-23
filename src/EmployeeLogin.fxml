@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="430.0" prefWidth="599.9999000000025" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.EmployeeLogin">
+<AnchorPane prefHeight="430.0" prefWidth="599.9999000000025" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.EmployeeLogin">
   <!-- TODO Add Nodes -->
   <children>
     <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
@@ -21,12 +21,17 @@
       </font>
     </Label>
     <Button fx:id="back" layoutX="39.0" layoutY="35.0" mnemonicParsing="false" onAction="#handle" text="BACK" />
-    <PasswordField layoutX="211.0" layoutY="178.0" prefWidth="200.0" promptText="PASSWORD" />
-    <TextField layoutX="211.0" layoutY="145.0" prefWidth="200.0" promptText="EMPLOYEE ID" />
+    <PasswordField fx:id="empPassword" layoutX="211.0" layoutY="178.0" prefWidth="200.0" promptText="PASSWORD" />
+    <TextField fx:id="empID" layoutX="211.0" layoutY="145.0" prefWidth="200.0" promptText="EMPLOYEE ID" />
     <Button fx:id="manager" layoutX="21.0" layoutY="310.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Store Manager Test" />
-    <Button layoutX="211.0" layoutY="208.0" mnemonicParsing="false" prefWidth="200.0" text="Submit" />
+    <Button layoutX="211.0" layoutY="208.0" mnemonicParsing="false" onAction="#Login" prefWidth="200.0" text="Submit" />
     <Button fx:id="maintainer" layoutX="390.0" layoutY="272.0" mnemonicParsing="false" onAction="#handle" text="Storage Maintainer Test" />
     <Button id="maintainer" fx:id="shopper" layoutX="390.0" layoutY="310.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Shopper Test" />
     <Button fx:id="driver" layoutX="21.0" layoutY="272.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Driver Test" />
+      <Label fx:id="loginStatus" layoutX="430.0" layoutY="208.0" prefHeight="17.0" prefWidth="206.0" textFill="#b91d1d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
   </children>
 </AnchorPane>

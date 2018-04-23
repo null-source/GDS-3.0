@@ -1,13 +1,12 @@
 package application.model;
 
-public class Employee {
+public abstract class Employee {
 	
 	private String name;
 	private int id;
 	private int type;
 	
 	public Employee(String name, int id, int type) {
-		super();
 		this.setName(name);
 		this.setId(id);
 		this.setType(type);
