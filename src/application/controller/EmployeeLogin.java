@@ -23,11 +23,8 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 	@FXML
 	private Label loginStatus;
 	
-	@FXML
-	private TextField empPassword;
-	
 	public void Login(ActionEvent event) {
-		if (empID.getText().equals("1") && empPassword.getText().equals("1")) {
+		if (empID.getText().equals("1") && password.getText().equals("1")) {
 			loginStatus.setText("Login Successful");
 		} else {
 			loginStatus.setText("Invalid credentials");
