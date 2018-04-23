@@ -8,6 +8,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class CustomerLoginController implements EventHandler <ActionEvent> {
 
@@ -15,6 +17,25 @@ public class CustomerLoginController implements EventHandler <ActionEvent> {
 	@FXML 
 	Button back, register;
 	
+	// Idk if this makes sense
+	@FXML
+	private Label loginStatus;
+	
+	@FXML
+	private TextField cusEmail;
+	
+	@FXML
+	private TextField cusPassword;
+	
+	public void Login(ActionEvent event) {
+		if (cusEmail.getText().equals("user") && cusPassword.getText().equals("pass")) {
+			loginStatus.setText("Login Successful");
+		} else {
+			loginStatus.setText("Login failed");
+		}
+		
+	}
+	// end of shit that might not make sense
 	
 	@Override
 	public void handle(ActionEvent event) {

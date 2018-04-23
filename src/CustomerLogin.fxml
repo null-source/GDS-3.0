@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.CustomerLoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CustomerLoginController">
   <!-- TODO Add Nodes -->
   <children>
     <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
@@ -21,9 +21,9 @@
         <Font name="DejaVu Sans Bold" size="20.0" />
       </font>
     </Label>
-    <TextField layoutX="200.0" layoutY="105.0" prefWidth="200.0" promptText="Email" />
-    <PasswordField layoutX="200.0" layoutY="146.0" prefWidth="200.0" promptText="Password" text="" />
-    <Button layoutX="267.0" layoutY="190.0" mnemonicParsing="false" text="Login" />
+    <TextField fx:id="cusEmail" layoutX="200.0" layoutY="105.0" prefWidth="200.0" promptText="Email" />
+    <PasswordField fx:id="cusPassword" layoutX="200.0" layoutY="146.0" prefWidth="200.0" promptText="Password" text="" />
+    <Button layoutX="267.0" layoutY="190.0" mnemonicParsing="false" onAction="#Login" text="Login" />
     <Button fx:id="register" layoutX="258.0" layoutY="286.0" mnemonicParsing="false" onAction="#handle" text="Register" />
     <Separator layoutX="200.0" layoutY="236.0" prefWidth="200.0" />
     <Label layoutX="200.0" layoutY="263.0" text="New to the Grocery Delivery System?">
@@ -31,5 +31,10 @@
         <Font size="11.0" />
       </font>
     </Label>
+      <Label fx:id="loginStatus" layoutX="368.0" layoutY="188.0" prefHeight="30.0" prefWidth="200.0" textFill="#b91d1d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
   </children>
 </AnchorPane>
