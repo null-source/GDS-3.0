@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.ManagerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ManagerController">
   <!-- TODO Add Nodes -->
   <children>
     <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
@@ -23,7 +23,7 @@
     </Label>
     <Button fx:id="inv" layoutX="28.0" layoutY="130.0" mnemonicParsing="false" onAction="#handle" prefWidth="161.0" text="VIEW INVENTORY" />
     <Button fx:id="orders" layoutX="28.0" layoutY="177.0" mnemonicParsing="false" onAction="#handle" prefWidth="161.0" text="VIEW ORDER" />
-    <Button layoutX="28.0" layoutY="222.0" mnemonicParsing="false" text="MANAGE EMPLOYEES" />
+    <Button fx:id="emps" layoutX="28.0" layoutY="222.0" mnemonicParsing="false" onAction="#handle" text="MANAGE EMPLOYEES" />
     <Button fx:id="fisc" layoutX="28.0" layoutY="265.0" mnemonicParsing="false" onAction="#handle" prefWidth="161.0" text="FINANCIAL INFO" />
   </children>
 </AnchorPane>

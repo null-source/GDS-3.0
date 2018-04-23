@@ -25,6 +25,24 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 	private Label loginStatus;
 	
 	public void handle(ActionEvent event) {
+		
+		if (event.getSource() == manager) {
+			try {
+				Parent root = FXMLLoader.load(getClass().getResource("/ViewOrders.fxml"));
+				
+				// Set the scene to stage and show the stage to the user
+				Main.stage.setTitle("GDS - Orders");
+				Main.stage.setResizable(true);
+				Main.stage.setHeight(400);
+				Main.stage.setMinHeight(420);
+				Main.stage.setMinWidth(600);
+				Main.stage.setScene(new Scene (root));
+				Main.stage.show();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
 		try {		
 			EmployeeHandle var = new EmployeeHandle(empID.getText(), password.getText());
 			int code = var.empExist();

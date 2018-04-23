@@ -14,11 +14,11 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141">
    <children>
-      <ImageView fitHeight="64.0" fitWidth="118.0" layoutX="468.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../gds_logo.jpg" />
-         </image>
-      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../gds_logo.jpg" />
+      </image>
+    </ImageView>
       <Button layoutX="32.0" layoutY="31.0" mnemonicParsing="false" text="BACK" />
       <Button layoutX="501.0" layoutY="343.0" mnemonicParsing="false" text="Check out" />
       <BorderPane layoutX="73.0" layoutY="100.0" prefHeight="234.0" prefWidth="492.0">
