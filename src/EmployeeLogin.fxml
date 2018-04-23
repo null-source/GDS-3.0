@@ -28,7 +28,7 @@
     <Button fx:id="maintainer" layoutX="390.0" layoutY="272.0" mnemonicParsing="false" onAction="#handle" text="Storage Maintainer Test" />
     <Button id="maintainer" fx:id="shopper" layoutX="390.0" layoutY="310.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Shopper Test" />
     <Button fx:id="driver" layoutX="21.0" layoutY="272.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Driver Test" />
-      <Label fx:id="loginStatus" layoutX="430.0" layoutY="208.0" prefHeight="17.0" prefWidth="206.0" textFill="#b91d1d">
+      <Label fx:id="loginStatus" layoutX="208.0" layoutY="110.0" prefHeight="20.0" prefWidth="268.0" textFill="#b91d1d">
          <font>
             <Font size="14.0" />
          </font>
