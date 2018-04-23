@@ -123,7 +123,7 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 		if (event.getSource() == submit) {
 			try {
 
-				int code = empExists(empID.getText(), password.getText())
+				int code = empExists(empID.getText(), password.getText());
 		
 				if (code == 0) { //Store Manager
 					Parent root = FXMLLoader.load(getClass().getResource("/ManagerView.fxml"));
