@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="430.0" prefWidth="599.9999000000025" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.EmployeeLogin">
   <!-- TODO Add Nodes -->
   <children>
-    <ImageView fitHeight="60.47368163424972" fitWidth="117.84614562988281" layoutX="468.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../gds_logo.jpg" />
       </image>

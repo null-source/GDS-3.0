@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.DriverController">
   <!-- TODO Add Nodes -->
   <children>
-    <ImageView fitHeight="55.907892463057244" fitWidth="108.94871520996094" layoutX="477.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../gds_logo.jpg" />
       </image>

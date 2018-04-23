@@ -5,11 +5,12 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="421.0" prefWidth="600.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MainController">
   <!-- TODO Add Nodes -->
   <children>
-    <ImageView fitHeight="54.90789344787598" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../gds_logo.jpg" />
       </image>
@@ -29,13 +30,16 @@
         </ContextMenu>
       </contextMenu>
     </Button>
-    <MenuButton layoutX="479.0" layoutY="86.0" mnemonicParsing="false" prefWidth="107.0" text="Account">
+    <MenuButton layoutX="492.0" layoutY="86.0" mnemonicParsing="false" prefWidth="94.0" text="Sign In">
       <items>
         <MenuItem mnemonicParsing="false" onAction="#handle" text="Login" fx:id="custLogin" />
         <MenuItem mnemonicParsing="false" onAction="#handle" text="Register" fx:id="register" />
       </items>
     </MenuButton>
-    <Button fx:id="employeeLogin" contentDisplay="CENTER" layoutX="492.0" layoutY="358.0" mnemonicParsing="false" onAction="#handle" text="Employees" textAlignment="CENTER">
+    <Button fx:id="employeeLogin" contentDisplay="CENTER" layoutX="515.0" layoutY="362.0" mnemonicParsing="false" onAction="#handle" text="Employees" textAlignment="CENTER">
+      <font>
+        <Font size="10.0" />
+      </font>
       <tooltip>
         <Tooltip text="Access employee portal" />
       </tooltip>

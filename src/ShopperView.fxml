@@ -18,7 +18,7 @@
         <Font name="DejaVu Sans Bold" size="20.0" />
       </font>
     </Label>
-    <ImageView fitHeight="62.63157653808594" fitWidth="122.05128022143117" layoutX="464.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fitHeight="55.0" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <image>
         <Image url="@../gds_logo.jpg" />
       </image>
