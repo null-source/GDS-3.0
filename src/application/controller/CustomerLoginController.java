@@ -15,29 +15,27 @@ public class CustomerLoginController implements EventHandler <ActionEvent> {
 
 	
 	@FXML 
-	Button back, register;
+	Button back, register, submit;
 	
 	@FXML
 	private Label loginStatus;
 	
 	@FXML
-	private TextField cusEmail;
-	
-	@FXML
-	private TextField cusPassword;
-	
-	public void Login(ActionEvent event) {
-		if (cusEmail.getText().equals("1") && cusPassword.getText().equals("1")) {
-			loginStatus.setText("Login Successful");
-		//	Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
-		} else {
-			loginStatus.setText("Invalid credentials");
-		}
-		
-	}
+	private TextField cusEmail, cusPassword;
 	
 	@Override
 	public void handle(ActionEvent event) {
+		
+		if (event.getSource() == submit) {
+			System.out.println("Test!");
+			if (cusEmail.getText().equals("1") && cusPassword.getText().equals("1")) {
+				loginStatus.setText("Login Successful");
+			//	Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
+			} else {
+				loginStatus.setText("Invalid credentials");
+			}
+		}
+		
 		if (event.getSource() == back) {
 			try {
 				Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
