@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.CustomerLoginController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fitHeight="70.63152522229805" fitWidth="137.64092172851815" layoutX="448.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../gds_logo.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="back" layoutX="38.0" layoutY="30.0" mnemonicParsing="false" onAction="#handle" text="BACK" />
+    <Label layoutX="261.0" layoutY="30.0" prefHeight="20.999908447265625" text="Sign in">
+      <font>
+        <Font name="DejaVu Sans Bold" size="20.0" />
+      </font>
+    </Label>
+    <TextField layoutX="200.0" layoutY="105.0" prefWidth="200.0" promptText="Email" />
+    <PasswordField layoutX="200.0" layoutY="146.0" prefWidth="200.0" promptText="Password" text="" />
+    <Button layoutX="267.0" layoutY="190.0" mnemonicParsing="false" text="Login" />
+    <Button fx:id="register" layoutX="258.0" layoutY="286.0" mnemonicParsing="false" onAction="#handle" text="Register" />
+    <Separator layoutX="200.0" layoutY="236.0" prefWidth="200.0" />
+    <Label layoutX="200.0" layoutY="263.0" text="New to the Grocery Delivery System?">
+      <font>
+        <Font size="11.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

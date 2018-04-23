@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.NewCustomerController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fitHeight="68.55262912651554" fitWidth="133.58973693847656" layoutX="452.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../gds_logo.jpg" />
+      </image>
+    </ImageView>
+    <Button fx:id="back" layoutX="28.0" layoutY="29.0" mnemonicParsing="false" onAction="#handle" text="BACK" />
+    <Label layoutX="214.0" layoutY="29.0" text="Create Account">
+      <font>
+        <Font name="DejaVu Sans Bold" size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="198.0" layoutY="97.0" text="Your name" />
+    <TextField layoutX="198.0" layoutY="121.0" prefWidth="200.0" />
+    <TextField layoutX="198.0" layoutY="170.0" prefWidth="200.0" />
+    <Label layoutX="198.0" layoutY="154.0" text="Email" />
+    <PasswordField layoutX="198.0" layoutY="226.0" prefWidth="200.0">
+      <tooltip>
+        <Tooltip text="Password must be at least 6 characters" />
+      </tooltip>
+    </PasswordField>
+    <PasswordField layoutX="198.0" layoutY="273.0" prefWidth="200.0" />
+    <Label layoutX="199.0" layoutY="210.0" text="Password" />
+    <Label layoutX="199.0" layoutY="257.0" text="Re-enter password" />
+    <Button layoutX="201.0" layoutY="306.0" mnemonicParsing="false" prefWidth="197.0" text="Create account" />
+    <Separator layoutX="198.0" layoutY="61.0" prefWidth="200.0" />
+  </children>
+</AnchorPane>

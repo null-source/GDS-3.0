@@ -9,10 +9,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
-public class MaintainerController implements EventHandler <ActionEvent> {
+public class CustomerLoginController implements EventHandler <ActionEvent> {
 
-	@FXML
-	Button back, inv;
+	
+	@FXML 
+	Button back, register;
 	
 	
 	@Override
@@ -22,7 +23,7 @@ public class MaintainerController implements EventHandler <ActionEvent> {
 				Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
 				
 				// Set the scene to stage and show the stage to the user
-				Main.stage.setTitle("GDS - Main");
+				Main.stage.setTitle("GDS - Driver");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
 				Main.stage.setMinHeight(420);
@@ -34,12 +35,12 @@ public class MaintainerController implements EventHandler <ActionEvent> {
 			}
 		}
 		
-		if (event.getSource() == inv) {
+		if (event.getSource() == register) {
 			try {
-				Parent root = FXMLLoader.load(getClass().getResource("/ViewInventoryMaintainer.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("/NewCustomerView.fxml"));
 				
 				// Set the scene to stage and show the stage to the user
-				Main.stage.setTitle("GDS - Inventory");
+				Main.stage.setTitle("GDS - Driver");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
 				Main.stage.setMinHeight(420);
@@ -51,7 +52,7 @@ public class MaintainerController implements EventHandler <ActionEvent> {
 			}
 		}
 		
+	
 	}
 
 }
-

@@ -9,19 +9,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
-public class MainController implements EventHandler <ActionEvent> {
+public class EmployeeLogin implements EventHandler <ActionEvent> {
 
 	
 	@FXML
-	Button manager, shopper, driver, maintainer, employeeLogin;
+	Button manager, shopper, driver, maintainer, back;
 	
 	
 	@Override
 	public void handle(ActionEvent event) {
 		
-		if (event.getSource() == employeeLogin) {
+		if (event.getSource() == back) {
 			try {
-				Parent root = FXMLLoader.load(getClass().getResource("/EmployeeLogin.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
 				
 				// Set the scene to stage and show the stage to the user
 				Main.stage.setTitle("EMPLOYEE LOGIN");
@@ -44,7 +44,7 @@ public class MainController implements EventHandler <ActionEvent> {
 				Main.stage.setTitle("GDS - Shopper");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
-				Main.stage.setMinHeight(420);
+				Main.stage.setMinHeight(400);
 				Main.stage.setMinWidth(600);
 				Main.stage.setScene(new Scene (root));
 				Main.stage.show();
@@ -61,7 +61,7 @@ public class MainController implements EventHandler <ActionEvent> {
 				Main.stage.setTitle("GDS - Manager");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
-				Main.stage.setMinHeight(420);
+				Main.stage.setMinHeight(400);
 				Main.stage.setMinWidth(600);
 				Main.stage.setScene(new Scene (root));
 				Main.stage.show();
@@ -78,7 +78,7 @@ public class MainController implements EventHandler <ActionEvent> {
 				Main.stage.setTitle("GDS - Driver");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
-				Main.stage.setMinHeight(420);
+				Main.stage.setMinHeight(400);
 				Main.stage.setMinWidth(600);
 				Main.stage.setScene(new Scene (root));
 				Main.stage.show();
@@ -95,7 +95,7 @@ public class MainController implements EventHandler <ActionEvent> {
 				Main.stage.setTitle("GDS - Storage Maintainer");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
-				Main.stage.setMinHeight(420);
+				Main.stage.setMinHeight(400);
 				Main.stage.setMinWidth(600);
 				Main.stage.setScene(new Scene (root));
 				Main.stage.show();

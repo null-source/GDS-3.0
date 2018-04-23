@@ -2,16 +2,53 @@
 
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MainController">
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="421.0" prefWidth="600.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.controller.MainController">
   <!-- TODO Add Nodes -->
   <children>
-    <Label layoutX="21.0" layoutY="31.0" text="Grocery Delivery System" />
-    <Button fx:id="manager" layoutX="21.0" layoutY="119.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Test Manager" />
-    <Button fx:id="maintainer" layoutX="21.0" layoutY="162.0" mnemonicParsing="false" onAction="#handle" text="Test Storage Maintainer" />
-    <Button fx:id="driver" layoutX="21.0" layoutY="200.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Test Driver" />
-    <Button fx:id="shopper" layoutX="21.0" layoutY="243.0" mnemonicParsing="false" onAction="#handle" prefWidth="179.0" text="Test Shopper" />
+    <ImageView fitHeight="54.90789344787598" fitWidth="107.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../gds_logo.jpg" />
+      </image>
+    </ImageView>
+    <TextField layoutX="26.0" layoutY="30.0" prefWidth="295.0">
+      <tooltip>
+        <Tooltip text="Search for items by name or category" />
+      </tooltip>
+    </TextField>
+    <Button layoutX="343.0" layoutY="31.0" mnemonicParsing="false" text="SEARCH">
+      <contextMenu>
+        <ContextMenu>
+          <items>
+            <MenuItem mnemonicParsing="false" text="Category" />
+            <MenuItem mnemonicParsing="false" text="Name" />
+          </items>
+        </ContextMenu>
+      </contextMenu>
+    </Button>
+    <MenuButton layoutX="479.0" layoutY="86.0" mnemonicParsing="false" prefWidth="107.0" text="Account">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Login" />
+        <MenuItem mnemonicParsing="false" text="Register" />
+      </items>
+    </MenuButton>
+    <Button fx:id="employeeLogin" contentDisplay="CENTER" layoutX="492.0" layoutY="358.0" mnemonicParsing="false" onAction="#handle" text="Employees" textAlignment="CENTER">
+      <tooltip>
+        <Tooltip text="Access employee portal" />
+      </tooltip>
+    </Button>
+    <ScrollPane layoutX="26.0" layoutY="86.0" prefHeight="293.0" prefWidth="422.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="292.0" prefWidth="421.0">
+          <children>
+            <ListView layoutX="-1.0" layoutY="0.0" prefHeight="278.0" prefWidth="407.9998779296875" />
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <ProgressBar layoutX="354.0" layoutY="379.0" minHeight="6.9998779296875" prefHeight="7.0" prefWidth="94.0" progress="-1.0" />
   </children>
 </AnchorPane>

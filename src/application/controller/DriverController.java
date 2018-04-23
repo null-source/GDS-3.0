@@ -24,7 +24,7 @@ public class DriverController implements EventHandler <ActionEvent> {
 				Main.stage.setTitle("GDS - Main");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
-				Main.stage.setMinHeight(400);
+				Main.stage.setMinHeight(420);
 				Main.stage.setMinWidth(600);
 				Main.stage.setScene(new Scene (root));
 				Main.stage.show();
@@ -41,7 +41,7 @@ public class DriverController implements EventHandler <ActionEvent> {
 				Main.stage.setTitle("GDS - Orders");
 				Main.stage.setResizable(true);
 				Main.stage.setHeight(400);
-				Main.stage.setMinHeight(400);
+				Main.stage.setMinHeight(420);
 				Main.stage.setMinWidth(600);
 				Main.stage.setScene(new Scene (root));
 				Main.stage.show();
