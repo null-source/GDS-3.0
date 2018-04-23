@@ -27,10 +27,10 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 	private TextField empPassword;
 	
 	public void Login(ActionEvent event) {
-		if (empID.getText().equals("1") && empID.getText().equals("1")) {
+		if (empID.getText().equals("1") && empPassword.getText().equals("1")) {
 			loginStatus.setText("Login Successful");
 		} else {
-			loginStatus.setText("Login failed");
+			loginStatus.setText("Invalid credentials");
 		}
 		
 	}

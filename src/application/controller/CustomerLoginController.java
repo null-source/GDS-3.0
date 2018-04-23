@@ -17,7 +17,6 @@ public class CustomerLoginController implements EventHandler <ActionEvent> {
 	@FXML 
 	Button back, register;
 	
-	// Idk if this makes sense
 	@FXML
 	private Label loginStatus;
 	
@@ -30,12 +29,12 @@ public class CustomerLoginController implements EventHandler <ActionEvent> {
 	public void Login(ActionEvent event) {
 		if (cusEmail.getText().equals("1") && cusPassword.getText().equals("1")) {
 			loginStatus.setText("Login Successful");
+		//	Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
 		} else {
-			loginStatus.setText("Login failed");
+			loginStatus.setText("Invalid credentials");
 		}
 		
 	}
-	// end of shit that might not make sense
 	
 	@Override
 	public void handle(ActionEvent event) {
