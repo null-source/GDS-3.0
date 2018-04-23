@@ -14,7 +14,7 @@ public class MainController implements EventHandler <ActionEvent> {
 
 	
 	@FXML
-	Button manager, shopper, driver, maintainer, employeeLogin;
+	Button manager, shopper, driver, maintainer, employeeLogin, search, cart;
 	
 	@FXML
 	MenuItem register, custLogin;
