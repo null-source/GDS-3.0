@@ -19,9 +19,6 @@ public class ManagerController implements EventHandler <ActionEvent> {
 	@Override
 	public void handle(ActionEvent event) {
 		
-		/**
-		 * @BRENDA REMOVE THIS LATER
-		 */
 		if (event.getSource() == orders) {
 			try {
 				Parent root = FXMLLoader.load(getClass().getResource("/ViewOrders.fxml"));
