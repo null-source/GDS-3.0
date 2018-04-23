@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import application.EmployeeHandle;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -15,19 +16,15 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 
 	
 	@FXML
-	Button manager, shopper, driver, maintainer, back;
+	private Button manager, shopper, driver, maintainer, back, submit;
+	@FXML
+	private TextField empID, password;
 	
 	@FXML
 	private Label loginStatus;
-
-	@FXML
-	private TextField empID;
-	
-	@FXML
-	private TextField empPassword;
 	
 	public void Login(ActionEvent event) {
-		if (empID.getText().equals("1") && empPassword.getText().equals("1")) {
+		if (empID.getText().equals("1") && password.getText().equals("1")) {
 			loginStatus.setText("Login Successful");
 		} else {
 			loginStatus.setText("Invalid credentials");
@@ -121,6 +118,67 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+		}
+		
+		if (event.getSource() == submit) {
+			try {
+
+				int code = empExists(empID.getText(), password.getText());
+		
+				if (code == 0) { //Store Manager
+					Parent root = FXMLLoader.load(getClass().getResource("/ManagerView.fxml"));
+					
+					// Set the scene to stage and show the stage to the user
+					Main.stage.setTitle("GDS - Manager");
+					Main.stage.setResizable(true);
+					Main.stage.setHeight(400);
+					Main.stage.setMinHeight(400);
+					Main.stage.setMinWidth(600);
+					Main.stage.setScene(new Scene (root));
+					Main.stage.show();		
+				} else if (code == 1) { //Storage Maintainer
+					Parent root = FXMLLoader.load(getClass().getResource("/MaintainerView.fxml"));
+					
+					// Set the scene to stage and show the stage to the user
+					Main.stage.setTitle("GDS - Storage Maintainer");
+					Main.stage.setResizable(true);
+					Main.stage.setHeight(400);
+					Main.stage.setMinHeight(400);
+					Main.stage.setMinWidth(600);
+					Main.stage.setScene(new Scene (root));
+					Main.stage.show();
+				} else if (code == 2) { //Driver
+					Parent root = FXMLLoader.load(getClass().getResource("/DriverView.fxml"));
+					
+					// Set the scene to stage and show the stage to the user
+					Main.stage.setTitle("GDS - Driver");
+					Main.stage.setResizable(true);
+					Main.stage.setHeight(400);
+					Main.stage.setMinHeight(400);
+					Main.stage.setMinWidth(600);
+					Main.stage.setScene(new Scene (root));
+					Main.stage.show();
+				} else if (code == 3) { //Shopper
+					Parent root = FXMLLoader.load(getClass().getResource("/ShopperView.fxml"));
+					
+					// Set the scene to stage and show the stage to the user
+					Main.stage.setTitle("GDS - Shopper");
+					Main.stage.setResizable(true);
+					Main.stage.setHeight(400);
+					Main.stage.setMinHeight(400);
+					Main.stage.setMinWidth(600);
+					Main.stage.setScene(new Scene (root));
+					Main.stage.show();				
+				} else { //Failed Log in
+					//TODO: Log in attempt failed
+					
+				}
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			
 		}
 		
 	}
