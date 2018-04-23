@@ -8,7 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import application.EmployeeHandle;
+import application.model.EmployeeHandle;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -122,8 +122,9 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 		
 		if (event.getSource() == submit) {
 			try {
-
-				int code = empExists(empID.getText(), password.getText());
+				
+				EmployeeHandle var = new EmployeeHandle(empID.getText(), password.getText());
+				int code = var.empExist();
 		
 				if (code == 0) { //Store Manager
 					Parent root = FXMLLoader.load(getClass().getResource("/ManagerView.fxml"));
