@@ -2,23 +2,43 @@ package application.model;
 
 public abstract class Customer {
 	
-	private String name;
+	private String firstname;
+	private String lastname;
 	private String email;
 	private String address;
+	private String password;
 	
-	public Customer(String name, String email, String address) {
-		this.setName(name);
-		this.setEmail(email);
-		this.setAddress(address);
-		
+	public Customer(String firstname, String lastname, String email, 
+			String address, String password) {
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.email = email;
+		this.address = address;
+		this.password = password;
 	}
 
-	public String getName() {
-		return name;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getEmail() {

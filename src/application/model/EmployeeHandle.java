@@ -63,25 +63,13 @@ public class EmployeeHandle {
 	 * @return Employee;
 	 */
 	
-	
+	/*
 	public Employee returnEmp() {
-		BufferedReader filein = null;
-		Employee empVar = null;
-		
-		try {
-			filein = new BufferedReader(new FileReader(EMPFILE));
-			String info[] = filein.readLine().split(":");
-			if (info[0].equals(empId)) {
-				if (info[1].equals(password)) {
-					
-				}
-			}
-			filein.close();
-		} catch (Exception e) {
-			e.printStackTrace();
+		int result = this.empExist();
+		if (result < 0) {
+			
 		}
-		
-		return empVar;
-		
 	}
+	*/
+	
 }
