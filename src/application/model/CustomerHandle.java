@@ -75,7 +75,7 @@ public class CustomerHandle {
 		String line = email + ":" + password + ":" + firstname + ":" + lastname + 
 				":" + address;
 		line.trim();
-		
+		line += "\n";
 		try {
 			
 			//append to the file
