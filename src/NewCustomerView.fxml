@@ -33,7 +33,7 @@
     <PasswordField fx:id="cusPasswordConfirm" layoutX="198.0" layoutY="273.0" prefWidth="200.0" />
     <Label layoutX="199.0" layoutY="210.0" text="Password" />
     <Label layoutX="199.0" layoutY="257.0" text="Re-enter password" />
-    <Button layoutX="201.0" layoutY="306.0" mnemonicParsing="false" onAction="#Register" prefWidth="197.0" text="Create account" />
+    <Button fx:id="createAcc" layoutX="201.0" layoutY="306.0" mnemonicParsing="false" onAction="#handle" prefWidth="197.0" text="Create account" />
     <Separator layoutX="198.0" layoutY="61.0" prefWidth="200.0" />
       <Label fx:id="registerStatus" layoutX="198.0" layoutY="61.0" prefHeight="37.0" prefWidth="328.0" textFill="#d31c1c" />
   </children>

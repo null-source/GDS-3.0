@@ -23,7 +23,7 @@
     </Label>
     <TextField fx:id="cusEmail" layoutX="200.0" layoutY="105.0" prefWidth="200.0" promptText="Email" />
     <PasswordField fx:id="cusPassword" layoutX="200.0" layoutY="146.0" prefWidth="200.0" promptText="Password" text="" />
-    <Button layoutX="267.0" layoutY="190.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+    <Button fx:id="submit" layoutX="267.0" layoutY="190.0" mnemonicParsing="false" onAction="#handle" text="Submit" />
     <Button fx:id="register" layoutX="258.0" layoutY="286.0" mnemonicParsing="false" onAction="#handle" text="Register" />
     <Separator layoutX="200.0" layoutY="236.0" prefWidth="200.0" />
     <Label layoutX="200.0" layoutY="263.0" text="New to the Grocery Delivery System?">

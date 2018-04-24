@@ -25,7 +25,7 @@ public class EmployeeLogin implements EventHandler <ActionEvent> {
 	private Label loginStatus;
 	
 	public void handle(ActionEvent event) {
-		
+
 		if (event.getSource() == back) {
 			try {
 				Parent root = FXMLLoader.load(getClass().getResource("/Main.fxml"));
